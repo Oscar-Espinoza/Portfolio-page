@@ -75,7 +75,7 @@ body {
   justify-content: center;
 }
 
-.headline .content{
+.headline .content {
   display: flex;
   flex-direction: column;
   padding: 50px 18px 0 0;
@@ -114,14 +114,14 @@ body {
   width: 289px;
 }
 
-.headline ul{
+.headline ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   align-self: flex-start;
 }
 
-.headline ul li{
+.headline ul li {
   display: inline-block;
 }
 
