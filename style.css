@@ -20,7 +20,7 @@ ul {
   margin: 0;
 }
 
-.grid-container{
+.grid-containe {
   display: grid;
 }
 
@@ -160,7 +160,6 @@ ul {
   margin-bottom: 100px;
 }
 
-
 .title h1 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -186,11 +185,11 @@ ul {
   margin-bottom: 30px;
 }
 
-.project a{
+.project a {
   color: #fff;
   height: 48px;
   text-decoration: none;
-  background: #FF6b00;
+  background: #ff6b00;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,21 +199,22 @@ ul {
   width: 100%;
 }
 
-.project-1{
+.project-1 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 568px;
-  color: #091E42;
+  color: #091e42;
 }
 
 .project-1 .project-title {
-  font-family: 'Crete Round' serif;
+  font-family: 'Crete Round' sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
 }
+
 .project-1 img {
   width: 100%;
 }
@@ -223,20 +223,24 @@ ul {
   padding-bottom: 50px;
 }
 
-.project-1 ul li{
-  background: #FFFFFF;
-  border: 1px solid #8993A4;
+.project-1 ul li {
+  background: #fff;
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+}
+
+.project-2 ul li {
+  background: rgba(255, 255, 255, 0.24);
   padding: 10px 12px;
 }
 
 .project-1 .project-skills li {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
 }
-
 
 .project ul {
   display: flex;
@@ -264,11 +268,6 @@ ul {
   line-height: 44px;
 }
 
-.project-2 ul li {
-  background: rgba(255, 255, 255, 0.24);
-  padding: 10px 12px;
-}
-
 /* ---- about me ---- */
 
 .about-me {
@@ -286,13 +285,13 @@ ul {
   text-align: center;
   width: 161px;
   height: 48px;
-  background: #FF6B00;
+  background: #ff6b00;
   text-decoration: none;
   align-items: center;
 }
 
 .get-my-resume p {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -326,7 +325,7 @@ ul {
 .skills dd {
   text-align: center;
   color: #fff;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
