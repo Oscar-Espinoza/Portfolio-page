@@ -14,7 +14,18 @@ body {
   font-family: 'roboto', sans-serif;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+}
+
 .header {
+  z-index: 10;
   position: sticky;
   top: 0;
   display: flex;
@@ -68,22 +79,27 @@ body {
 
 /*  ----headline----  */
 
-.headline {
+.dark-bg {
+  position: relative;
   background: #1c1a19;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.headline .content {
+.content {
   display: flex;
   flex-direction: column;
   padding: 50px 18px 0 0;
   justify-content: space-between;
+}
+
+.content-1 {
   max-height: 396px;
 }
 
-.headline h1 {
+.dark-bg h1 {
   font-family: 'crete round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -93,7 +109,7 @@ body {
   color: #ff6b00;
 }
 
-.headline h2 {
+.dark-bg h2 {
   font-family: 'roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -104,7 +120,7 @@ body {
   color: #fff5e1;
 }
 
-.headline p {
+.dark-bg p {
   font-family: 'poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -114,19 +130,204 @@ body {
   width: 289px;
 }
 
-.headline ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.dark-bg ul {
   align-self: flex-start;
 }
 
-.headline ul li {
+.dark-bg ul li {
   display: inline-block;
 }
 
-.headline .squares {
+.dark-bg .squares {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+/*  ---- Recent work ---- */
+
+.recent-work {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.title {
+  width: 85%;
+  padding-top: 130px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.title h1 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 50px;
+}
+
+.title hr {
+  width: 100%;
+}
+
+.projects {
+  justify-items: center;
+  background: #fff;
+}
+
+.project {
+  width: 85%;
+  height: 386px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.project a {
+  color: #fff;
+  height: 48px;
+  text-decoration: none;
+  background: #ff6b00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.project-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 568px;
+  color: #091e42;
+}
+
+.project-1 .project-title {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.project-1 img {
+  width: 100%;
+}
+
+.project-1 ul {
+  padding-bottom: 50px;
+}
+
+.project-1 ul li {
+  background: #fff;
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+}
+
+.project-2 ul li {
+  background: rgba(255, 255, 255, 0.24);
+  padding: 10px 12px;
+}
+
+.project-1 .project-skills li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.project ul {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+}
+
+.project-2 {
+  color: #fff;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(Media/background-project.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 20px 90px 20px;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-2 .project-title {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+/* ---- about me ---- */
+
+.about-me {
+  gap: 160px;
+}
+
+.about-me .about-me-img {
+  position: absolute;
+  right: 0;
+  top: 160px;
+}
+
+.get-my-resume {
+  display: flex;
+  text-align: center;
+  width: 161px;
+  height: 48px;
+  background: #ff6b00;
+  text-decoration: none;
+  align-items: center;
+}
+
+.get-my-resume p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.content-2 {
+  height: 348px;
+}
+
+.about-me hr {
+  width: 80%;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skills dt {
+  text-align: center;
+  font-family: 'InaiMathi', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.skills dd {
+  text-align: center;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
 }
