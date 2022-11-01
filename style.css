@@ -344,7 +344,8 @@ ul {
   padding-top: 120px;
 }
 
-.contact-form-section h6, form {
+.contact-form-section h6,
+form {
   width: 80%;
 }
 
@@ -356,17 +357,17 @@ ul {
 }
 
 .contact-form-section h6 {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .contact-form-section label {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -382,14 +383,15 @@ ul {
   width: 100%;
 }
 
-#fs-frm-inputs input, textarea {
+#fs-frm-inputs input,
+textarea {
   border-style: none none solid none;
   border-bottom: 1px solid #dbd8d7;
   padding: 0 0 10px 10px;
 }
 
 #fs-frm-inputs textarea {
-  background: #FBF8F7;
+  background: #fbf8f7;
   border: none;
 }
 
@@ -398,11 +400,10 @@ ul {
   border: none;
   padding: 12px;
   color: #fff;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
 }
