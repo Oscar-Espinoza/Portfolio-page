@@ -354,6 +354,7 @@ form {
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  padding-bottom: 100px;
 }
 
 .contact-form-section h6 {
@@ -379,7 +380,7 @@ form {
   display: flex;
   flex-direction: column;
   border: none;
-  gap: 10px;
+  gap: 30px;
   width: 100%;
 }
 
@@ -406,4 +407,11 @@ textarea {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
+}
+
+.social-media-icons {
+  border-top: 1px solid #dbd8d7;
+  width: 100%;
+  text-align: center;
+  padding: 24px;
 }
