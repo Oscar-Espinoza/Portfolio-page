@@ -30,10 +30,10 @@ ul {
   top: 0;
   display: flex;
   align-items: center;
-  gap: 230px;
   background: #3e3c3c;
   height: 50px;
   padding: 0 30px 0 30px;
+  justify-content: space-between;
 }
 
 .logo h4 {
@@ -103,7 +103,7 @@ ul {
 }
 
 .dark-bg h1 {
-  font-family: 'crete round', sans-serif;
+  font-family: 'crete round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -124,7 +124,7 @@ ul {
 }
 
 .dark-bg p {
-  font-family: 'poppins', sans-serif;
+  font-family: 'poppins', system-ui;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -164,8 +164,8 @@ ul {
   gap: 50px;
 }
 
-.title h1 {
-  font-family: 'Crete Round', sans-serif;
+.title h2 {
+  font-family: 'crete round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -181,10 +181,10 @@ ul {
 }
 
 .project {
-  width: 85%;
   min-height: 450px;
   position: relative;
   margin-bottom: 30px;
+  width: 80%;
 }
 
 .project .see-project {
@@ -206,10 +206,11 @@ ul {
   flex-direction: column;
   color: #091e42;
   gap: 20px;
+  justify-content: center;
 }
 
 .project-1 .project-title {
-  font-family: 'Crete Round', sans-serif;
+  font-family: 'crete round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -267,6 +268,14 @@ ul {
   line-height: 44px;
 }
 
+.project-2 p {
+  font-family: 'Inter', system-ui;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+}
+
 /* ---- about me ---- */
 
 .about-me {
@@ -278,6 +287,14 @@ ul {
 
 .dark-bg .about-me {
   flex-direction: column;
+}
+
+.about-me p {
+  font-family: 'Inter', system-ui;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .about-me-img {
@@ -407,7 +424,7 @@ textarea {
   border: none;
   padding: 12px;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', system-ui;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -496,9 +513,10 @@ textarea {
     gap: 25px;
     justify-content: center;
     align-items: center;
+    color: #091E42
   }
 
-  .title h1 {
+  .title h2 {
     margin-bottom: 0;
     min-width: 315px;
     display: inline;
@@ -545,27 +563,35 @@ textarea {
     width: 124px;
   }
 
-  .project-2.active .see-project,
-  .project-description {
+  .project.active > .project-description {
     display: none !important;
   }
 
   .bg-first-img {
-    background: url(Media/IMG-first.svg);
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 84.18%), url(Media/IMG-first.svg);
   }
 
   .bg-second-img {
-    background: url(Media/IMG-second.svg);
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 84.18%), url(Media/IMG-second.svg);
   }
 
   .bg-third-img {
-    background: url(Media/IMG-third.svg);
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 84.18%), url(Media/IMG-third.svg);
+  }
+
+  .bg-first-img.active {
+    background: url(Media/IMG-first.svg);
   }
 
   /* ---- About me ---- */
 
   .about-me {
     margin: 50px 0 100px 0;
+  }
+
+  .about-me p {
+    font-size: 20px;
+    line-height: 32px;
   }
 
   .about-me .content {
@@ -604,7 +630,7 @@ textarea {
 
   .contact-form-section h6 {
     width: 45%;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', system-ui;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -618,5 +644,9 @@ textarea {
 
   .btn-submit {
     align-self: flex-start;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
   }
 }
