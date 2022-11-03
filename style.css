@@ -553,9 +553,11 @@ textarea {
   .bg-first-img {
     background: url(Media/IMG-first.svg);
   }
+
   .bg-second-img {
     background: url(Media/IMG-second.svg);
   }
+  
   .bg-third-img {
     background: url(Media/IMG-third.svg);
   }
