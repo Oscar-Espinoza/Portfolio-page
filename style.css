@@ -30,7 +30,7 @@ ul {
   top: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 230px;
   background: #3e3c3c;
   height: 50px;
   padding: 0 30px 0 30px;
@@ -84,19 +84,26 @@ ul {
   background: #1c1a19;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+
+.about-me .content {
+  padding: 50px 18px 0 0;
+}
+
+.dark-bg .about-me {
+  flex-direction: column;
+}
+
+.big-squares {
+  display: none;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  padding: 50px 18px 0 0;
-  justify-content: space-between;
-}
-
-.content-1 {
-  max-height: 396px;
+  gap: 20px;
 }
 
 .dark-bg h1 {
@@ -130,18 +137,15 @@ ul {
   width: 289px;
 }
 
-.dark-bg ul {
-  align-self: flex-start;
+.icons {
+  display: flex;
+  gap: 20px;
 }
 
-.dark-bg ul li {
-  display: inline-block;
-}
-
-.dark-bg .squares {
+.squares {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -50px;
 }
 
 /*  ---- Recent work ---- */
@@ -151,13 +155,17 @@ ul {
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
+  background: #fff;
+  gap: 100px;
 }
 
 .title {
+  display: flex;
+  flex-direction: column;
   width: 85%;
   padding-top: 130px;
-  margin-bottom: 100px;
   text-align: center;
+  gap: 50px;
 }
 
 .title h1 {
@@ -166,7 +174,6 @@ ul {
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
-  margin-bottom: 50px;
 }
 
 .title hr {
@@ -175,36 +182,34 @@ ul {
 
 .projects {
   justify-items: center;
-  background: #fff;
 }
 
 .project {
   width: 85%;
-  height: 386px;
+  min-height: 450px;
   position: relative;
   margin-bottom: 30px;
 }
 
-.project a {
+.project .see-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   height: 48px;
   text-decoration: none;
   background: #ff6b00;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
+  margin-top: 20px;
 }
 
 .project-1 {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 568px;
   color: #091e42;
+  gap: 20px;
 }
 
 .project-1 .project-title {
@@ -215,16 +220,7 @@ ul {
   line-height: 44px;
 }
 
-.project-1 img {
-  width: 100%;
-}
-
-.project-1 ul {
-  padding-bottom: 50px;
-}
-
-.project-1 ul li {
-  background: #fff;
+.project-skills li {
   border: 1px solid #8993a4;
   padding: 10px 12px;
 }
@@ -253,9 +249,16 @@ ul {
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(Media/background-project.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0 20px 90px 20px;
   display: flex;
   justify-content: end;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.project-2 .project-description {
+  width: 80%;
+  display: flex;
   flex-direction: column;
   gap: 15px;
 }
@@ -271,13 +274,20 @@ ul {
 /* ---- about me ---- */
 
 .about-me {
+  display: flex;
+  align-items: center;
+  width: 80%;
   gap: 160px;
 }
 
-.about-me .about-me-img {
+.about-me-img {
   position: absolute;
   right: 0;
-  top: 160px;
+  top: 250px;
+}
+
+.about-me-big-img {
+  display: none;
 }
 
 .get-my-resume {
@@ -298,12 +308,8 @@ ul {
   line-height: 24px;
 }
 
-.content-2 {
-  height: 348px;
-}
-
-.about-me hr {
-  width: 80%;
+.dark-bg hr {
+  width: 100%;
 }
 
 .skills {
@@ -414,4 +420,187 @@ textarea {
   width: 100%;
   text-align: center;
   padding: 24px;
+}
+
+/* ---- Desktop version ---- */
+
+@media (min-width: 768px) {
+  .toggle-btn {
+    display: none;
+  }
+
+  .nav-links {
+    display: inline-block;
+  }
+  
+  .nav-links ul {
+    display: flex;
+    color: #fff;
+    gap: 20px;
+  }
+
+  .nav-links ul li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .dark-bg.headline{
+    justify-content: center;
+  }
+
+  .headline .content {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 0 30px;
+    gap: 100px;
+  }
+
+  .icons {
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .squares {
+    display: none;
+  }
+
+  .big-squares {
+    display: inline;
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .introduction h1 {
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .introduction h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  /* ---- Recent works ---- */
+
+  .recent-work .title {
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title h1 {
+    margin-bottom: 0;
+    min-width: 315px;
+    display: inline;
+  }
+
+  .recent-work .title hr {
+    flex-grow: 1;
+    height: 0;
+    border: 1px solid #212121;
+  }
+
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    justify-items: baseline;
+    grid-column-gap: 24px;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .project-1 {
+    flex-direction: row;
+    grid-column: 1 / -1;
+  }
+
+  .project-1 img {
+    width: 100%;
+    max-width: 684px;
+  }
+
+  .project-1 .project-text p{
+    max-width: 311px;
+  }
+
+  .project-1 .project-title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .project-1 .see-project {
+    width: 124px;
+  }
+
+  /* ---- About me ---- */
+
+  .about-me {
+    margin: 50px 0 100px 0;
+  }
+
+  .about-me .content {
+    align-self: baseline;
+  }
+
+  .about-me-img {
+    display: none;
+  }
+
+  .about-me-big-img {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 99px;
+  }
+
+  .about-me .skills {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .skills dd {
+    text-align: left;
+  }
+
+/* ---- Contact ---- */
+
+  .contact-form-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .contact-form-section h6 {
+    width: 45%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #262626;
+  }
+
+  .contact-form-section form {
+    width: 45%;
+  }
+
+  .btn-submit {
+    align-self: flex-start;
+  }
+
 }
