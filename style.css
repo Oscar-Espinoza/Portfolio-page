@@ -88,22 +88,18 @@ ul {
   align-items: center;
 }
 
-.about-me .content {
-  padding: 50px 18px 0 0;
-}
-
-.dark-bg .about-me {
-  flex-direction: column;
-}
-
-.big-squares {
-  display: none;
-}
-
 .content {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.about-me .content {
+  padding: 50px 18px 0 0;
+}
+
+.big-squares {
+  display: none;
 }
 
 .dark-bg h1 {
@@ -280,6 +276,10 @@ ul {
   gap: 160px;
 }
 
+.dark-bg .about-me {
+  flex-direction: column;
+}
+
 .about-me-img {
   position: absolute;
   right: 0;
@@ -440,14 +440,14 @@ textarea {
   }
 
   .nav-links ul li {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
   }
 
-  .dark-bg.headline{
+  .dark-bg.headline {
     justify-content: center;
   }
 
@@ -531,7 +531,7 @@ textarea {
     max-width: 684px;
   }
 
-  .project-1 .project-text p{
+  .project-1 .project-text p {
     max-width: 311px;
   }
 
@@ -576,7 +576,7 @@ textarea {
     text-align: left;
   }
 
-/* ---- Contact ---- */
+  /* ---- Contact ---- */
 
   .contact-form-section {
     flex-direction: row;
@@ -602,5 +602,4 @@ textarea {
   .btn-submit {
     align-self: flex-start;
   }
-
 }
