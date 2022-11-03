@@ -545,6 +545,21 @@ textarea {
     width: 124px;
   }
 
+  .project-2.active .see-project,
+  .project-description {
+    display: none !important;
+  }
+
+  .bg-first-img {
+    background: url(Media/IMG-first.svg);
+  }
+  .bg-second-img {
+    background: url(Media/IMG-second.svg);
+  }
+  .bg-third-img {
+    background: url(Media/IMG-third.svg);
+  }
+
   /* ---- About me ---- */
 
   .about-me {
