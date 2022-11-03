@@ -513,7 +513,7 @@ textarea {
     gap: 25px;
     justify-content: center;
     align-items: center;
-    color: #091E42
+    color: #091e42;
   }
 
   .title h2 {
@@ -547,6 +547,11 @@ textarea {
   .project-1 img {
     width: 100%;
     max-width: 684px;
+  }
+
+  .about-me p {
+    font-size: 20px;
+    line-height: 32px;
   }
 
   .project-1 .project-text p {
@@ -587,11 +592,6 @@ textarea {
 
   .about-me {
     margin: 50px 0 100px 0;
-  }
-
-  .about-me p {
-    font-size: 20px;
-    line-height: 32px;
   }
 
   .about-me .content {
