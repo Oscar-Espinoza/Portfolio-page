@@ -1,9 +1,9 @@
-My personal portfolio
+##My personal portfolio
 
 In here you will be able to see my experience, the projects I've done, and the knowledge I have of different technologies.
 
 
-Built With
+## Built With
 - HTML & CSS
 - Javascript
 - GitHub
@@ -13,8 +13,8 @@ At this point, you can clone or download the code, open the index.html file and 
 
 👤 Author1
 
-GitHub: @Oscar-Espinoza
-LinkedIn: https://www.linkedin.com/in/oscar-espinoza-68a398a8
+  GitHub: @Oscar-Espinoza
+  LinkedIn: https://www.linkedin.com/in/oscar-espinoza-68a398a8
 👤 Author2
 
 🤝 Contributing
@@ -25,5 +25,5 @@ Feel free to check the issues page.
 Show your support
 Give a ⭐️ if you like this project!
 
-📝 License
-This project is MIT licensed.
+## Website
+  You can take a look to this project following the next link: https://github.com/Oscar-Espinoza/Portfolio-page/settings/pages
