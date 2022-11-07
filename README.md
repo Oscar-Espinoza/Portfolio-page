@@ -26,4 +26,4 @@ Show your support
 Give a ⭐️ if you like this project!
 
 ## Website
-  You can take a look to this project following the next link: https://github.com/Oscar-Espinoza/Portfolio-page/settings/pages
+  You can take a look to this project following the next link: 
