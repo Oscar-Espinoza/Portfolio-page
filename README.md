@@ -26,4 +26,4 @@ Show your support
 Give a ⭐️ if you like this project!
 
 ## Website
-  You can take a look to this project following the next link: 
+  [Live version](https://oscar-espinoza.github.io/Portfolio-page)
