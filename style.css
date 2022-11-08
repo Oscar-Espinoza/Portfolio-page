@@ -439,6 +439,10 @@ textarea {
   padding: 24px;
 }
 
+#full-name:focus, #email-address:focus {
+  border: solid 1px red;
+}
+
 /* ---- Desktop version ---- */
 
 @media (min-width: 768px) {
