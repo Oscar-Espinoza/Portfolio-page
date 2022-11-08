@@ -201,13 +201,6 @@ ul {
   margin-top: 20px;
 }
 
-.see-project:focus,
-.btn-submit:focus,
-#full-name:focus,
-#email-address:focus,
-#message:focus {
-  border: solid 2px rgb(19, 23, 235);
-}
 .project-1 {
   display: flex;
   flex-direction: column;
@@ -439,15 +432,19 @@ textarea {
   letter-spacing: 0.03em;
 }
 
+.see-project:focus,
+.btn-submit:focus,
+#full-name:focus,
+#email-address:focus,
+#message:focus {
+  border: solid 2px rgb(19, 23, 235);
+}
+
 .social-media-icons {
   border-top: 1px solid #dbd8d7;
   width: 100%;
   text-align: center;
   padding: 24px;
-}
-
-#full-name:focus, #email-address:focus {
-  border: solid 1px red;
 }
 
 /* ---- Desktop version ---- */
