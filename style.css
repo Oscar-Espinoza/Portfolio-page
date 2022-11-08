@@ -194,7 +194,7 @@ ul {
   color: #fff;
   height: 48px;
   text-decoration: none;
-  background: #ff6b00;
+  background: #c45100;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -312,7 +312,7 @@ ul {
   text-align: center;
   width: 161px;
   height: 48px;
-  background: #ff6b00;
+  background: #c45100;
   text-decoration: none;
   align-items: center;
 }
@@ -420,7 +420,7 @@ textarea {
 }
 
 .btn-submit {
-  background: #ff6b00;
+  background: #c45100;
   border: none;
   padding: 12px;
   color: #fff;
@@ -430,6 +430,14 @@ textarea {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
+}
+
+.see-project:focus,
+.btn-submit:focus,
+#full-name:focus,
+#email-address:focus,
+#message:focus {
+  border: solid 2px rgb(19, 23, 235);
 }
 
 .social-media-icons {
