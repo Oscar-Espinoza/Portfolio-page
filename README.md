@@ -25,5 +25,9 @@ Feel free to check the issues page.
 Show your support
 Give a ⭐️ if you like this project!
 
+## Watch my walkthrough video for the website
+
+Loom video link: https://www.loom.com/share/509a1a1f5289496eb60b8c814f279989
+
 ## Website
   [Live version](https://oscar-espinoza.github.io/Portfolio-page)
