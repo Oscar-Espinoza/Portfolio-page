@@ -1,6 +1,4 @@
-let showHideMenu = ''
-
-showHideMenu = () => {
+const showHideMenu = () => {
   const mobileMenu = document.getElementById('menu-mobile');
   if (mobileMenu.classList.contains('active')) {
     mobileMenu.classList.remove('active');
@@ -8,4 +6,3 @@ showHideMenu = () => {
     mobileMenu.classList.add('active');
   }
 };
-
