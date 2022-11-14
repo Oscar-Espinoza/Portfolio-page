@@ -20,41 +20,6 @@ ul {
   margin: 0;
 }
 
-.menu-mobile {
-  display: none;
-  height: 100vh;
-  width: 100%;
-  position: absolute;
-  background: #1c1a19;
-  top: 0;
-  left: 0;
-  color: #fff;
-  padding: 30px 30px 0 30px;
-}
-
-.menu-mobile ul {
-  margin-top: 40px;
-}
-
-.menu-mobile ul li h2 {
-  font-family: 'Inter', unset;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  margin: 20px 0 20px 20px;
-}
-
-.menu-mobile hr {
-  height: 1px;
-  background-color: #6F6C6B;
-  border: none;
-}
-
-#menu-mobile.active {
-  display: block;
-}
-
 .grid-container {
   display: grid;
 }
@@ -121,6 +86,41 @@ ul {
   line-height: 20px;
 }
 
+.menu-mobile {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background: #1c1a19;
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding: 30px 30px 0 30px;
+}
+
+.menu-mobile ul {
+  margin-top: 40px;
+}
+
+.menu-mobile ul li h2 {
+  font-family: 'Inter', 'CIRCULAR-LOOM';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 20px 0 20px 20px;
+}
+
+.menu-mobile hr {
+  height: 1px;
+  background-color: #6f6c6b;
+  border: none;
+}
+
+#menu-mobile.active {
+  display: block;
+}
+
 /*  ----headline----  */
 
 .dark-bg {
@@ -156,7 +156,7 @@ ul {
   color: #ff6b00;
 }
 
-.dark-bg h2 {
+.dark-bg.headline h2, .dark-bg .about-me h2 {
   font-family: 'roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -208,7 +208,7 @@ ul {
   gap: 50px;
 }
 
-.title h2 {
+.title .recent-work-title {
   font-family: 'crete round', serif;
   font-style: normal;
   font-weight: 400;
@@ -344,7 +344,7 @@ ul {
 .about-me-img {
   position: absolute;
   right: 0;
-  top: 250px;
+  top: 210px;
 }
 
 .about-me-big-img {
