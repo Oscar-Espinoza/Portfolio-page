@@ -66,10 +66,6 @@ ul {
   float: right;
 }
 
-.header #menu-mobile .active {
-  display: block;
-}
-
 .nav-links {
   display: none;
 }
@@ -103,7 +99,7 @@ ul {
 }
 
 .menu-mobile ul li h2 {
-  font-family: 'Inter', 'CIRCULAR-LOOM';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -156,7 +152,8 @@ ul {
   color: #ff6b00;
 }
 
-.dark-bg.headline h2, .dark-bg .about-me h2 {
+.dark-bg.headline h2,
+.dark-bg .about-me h2 {
   font-family: 'roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
