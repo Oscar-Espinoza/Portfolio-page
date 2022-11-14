@@ -12,7 +12,7 @@
     <div class="logo">
       <h4 class="name">Oscar Espinoza</h4>
     </div>
-    <div class="toggle-btn">
+    <div class="toggle-btn" onclick="showHideMenu(event.currentTarget, 'x-btn')" id="toggle-btn">
       <span></span>
       <span></span>
       <span></span>
@@ -25,6 +25,14 @@
         <li><img src="Media/Icon-Mail.svg" alt="email-icon"></li>
       </ul>
     </nav>
+    <section class="menu-mobile" id="menu-mobile">
+      <img src="/Media/Icon-X.svg" alt="close-menu-button" id="x-btn" onclick="showHideMenu(event.currentTarget, 'toggle-btn')">
+      <ul>
+        <li><h2>Portfolio</h2><hr></li>
+        <li><h2>About</h2><hr></li>
+        <li><h2>Contact</h2><hr></li>
+      </ul>
+    </section>
   </header>
   <section class="dark-bg headline">
     <img src="Media/image.svg" alt="headline_bg_img_phone_view" class="squares">
@@ -219,10 +227,9 @@
       <img src="Media/Icon-Twitter-dark.svg" alt="twitter_icon">
       <img src="Media/Icon-M-dark.svg" alt="M_icon">
     </div>
-
   </section>
 
-
+  <script src="app.js"></script>
 
 </body>
 </html>
