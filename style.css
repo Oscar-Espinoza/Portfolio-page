@@ -347,6 +347,43 @@ ul {
   background: #dfe1e6;
   mix-blend-mode: normal;
   z-index: 3;
+  padding: 20px;
+}
+
+.pop-up-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pop-up-technologies {
+  display: flex;
+  gap: 20px;
+}
+
+.pop-up-technologies li {
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+}
+
+.pop-up-img {
+  width: 100%;
+}
+
+.pop-up-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pop-up-btn {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  background: #ff6b00;
+  width: 134px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ---- about me ---- */
