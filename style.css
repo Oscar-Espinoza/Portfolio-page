@@ -327,10 +327,14 @@ ul {
   height: 100vh;
   z-index: 2;
   top: 0;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   padding-top: 20px;
+}
+
+.pop-up.active {
+  display: flex;
 }
 
 .background-pop-up {
