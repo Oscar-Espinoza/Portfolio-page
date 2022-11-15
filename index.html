@@ -12,7 +12,7 @@
     <div class="logo">
       <h4 class="name">Oscar Espinoza</h4>
     </div>
-    <div class="toggle-btn">
+    <div class="toggle-btn menu-btn" id="toggle-btn">
       <span></span>
       <span></span>
       <span></span>
@@ -25,6 +25,14 @@
         <li><img src="Media/Icon-Mail.svg" alt="email-icon"></li>
       </ul>
     </nav>
+    <section class="menu-mobile" id="menu-mobile">
+      <img class="menu-btn" src="/Media/Icon-X.svg" alt="close-menu-button" id="x-btn">
+      <ul>
+        <li><a href="#Portfolio" class="menu-btn">Portfolio</a><hr></li>
+        <li><a href="#About" class="menu-btn">About</a><hr></li>
+        <li><a href="#Contact" class="menu-btn">Contact</a><hr></li>
+      </ul>
+    </section>
   </header>
   <section class="dark-bg headline">
     <img src="Media/image.svg" alt="headline_bg_img_phone_view" class="squares">
@@ -45,9 +53,9 @@
       </ul>
     </div>
   </section>
-  <section class="recent-work">
+  <section class="recent-work" id="Portfolio">
     <div class="title">
-      <h2>My Recent Works</h2>
+      <h2 class="recent-work-title">My Recent Works</h2>
       <hr>
     </div>
     <div class="grid-container projects">
@@ -156,7 +164,7 @@
       
     </div>
   </section>
-  <section class="dark-bg">
+  <section class="dark-bg" id="About">
     <div class="about-me">
       <img src="Media/about-me-image.svg" alt="about-me_bg_img_phone_view" class="about-me-img">
       <img src="Media/About-me-big-image.svg" alt="about-me_bg_img_desktop_view" class="about-me-big-img">
@@ -199,7 +207,7 @@
 
   </section>
 
-  <section class="contact-form-section">
+  <section class="contact-form-section" id="Contact">
 
     <h6>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h6>
 
@@ -219,10 +227,9 @@
       <img src="Media/Icon-Twitter-dark.svg" alt="twitter_icon">
       <img src="Media/Icon-M-dark.svg" alt="M_icon">
     </div>
-
   </section>
 
-
+  <script src="app.js"></script>
 
 </body>
 </html>
