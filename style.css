@@ -24,8 +24,120 @@ ul {
   display: grid;
 }
 
+/* ---- pop up window ---- */
+
+.pop-up {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 2;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.pop-up.active {
+  display: flex;
+}
+
+.background-pop-up {
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  position: absolute;
+  top: 0;
+}
+
+.pop-up-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  height: 85vh;
+  background: #fff;
+  z-index: 3;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.pop-up-title {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+#close-window {
+  font-size: 14px;
+  color: #67798e;
+  cursor: pointer;
+}
+
+.pop-up-technologies {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pop-up-technologies li {
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+}
+
+.content-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-description .description-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pop-up-img {
+  width: 100%;
+  max-height: 100%;
+  max-width: 659px;
+  align-self: start;
+}
+
+.pop-up-btns {
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  gap: 10px;
+}
+
+.pop-up-btn {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  background: #ff6b00;
+  width: 134px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.pop-up-btn img {
+  margin-left: 10px;
+}
+
+/* Header */
+
 .header {
-  z-index: 10;
+  z-index: 1;
   position: sticky;
   top: 0;
   display: flex;
@@ -493,6 +605,49 @@ textarea {
 /* ---- Desktop version ---- */
 
 @media (min-width: 768px) {
+  /* ---- pop-up desktop---- */
+
+  .pop-up-technologies {
+    justify-content: start;
+    gap: 20px;
+  }
+
+  .pop-up .content-description {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .content-description .pop-up-img {
+    max-width: 640px;
+    flex-grow: 1;
+  }
+
+  .content-description .description-text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .description-text p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+  }
+
+  .content-description .pop-up-btns {
+    justify-content: start;
+    gap: 5px;
+  }
+
+  .pop-up-btn {
+    flex-grow: initial;
+  }
+
   #toggle-btn {
     display: none;
   }
@@ -609,7 +764,7 @@ textarea {
     line-height: 32px;
   }
 
-  .project-1 .project-text p {
+  .project-1 .project-description p {
     max-width: 311px;
   }
 

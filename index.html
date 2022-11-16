@@ -8,6 +8,32 @@
   <title>Oscar's Portfolio</title>
 </head>
 <body>
+  <section id="pop-up" class="pop-up">
+    <div class="background-pop-up"></div>
+
+    <div class="pop-up-content">
+      <div class="pop-up-title">
+        <h2 id="pop-up-title"></h2>
+        <p id="close-window">X</p>
+      </div>
+
+      <ul class="pop-up-technologies" id="pop-up-technologies"></ul>
+
+      <div class="content-description">
+        <img src='' alt="pop-up-img" class="pop-up-img" id="pop-up-img">
+        <div class="description-text">
+          <p id="description-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>
+  
+          <div class="pop-up-btns">
+            <a class="pop-up-btn" id='see-live' href=''>See live <img src="/Media/icon-see-live.svg" alt="see-live-icon"></a>
+            <a class="pop-up-btn" id="see-source" href=''>See source <img src="/Media/Icon-GitHub-white.svg" alt="gitgub-icon"></a>
+          </div>
+        </div>
+
+      </div>
+      </div>
+  </section>
+
   <header class="header">
     <div class="logo">
       <h4 class="name">Oscar Espinoza</h4>
@@ -34,6 +60,7 @@
       </ul>
     </section>
   </header>
+
   <section class="dark-bg headline">
     <img src="Media/image.svg" alt="headline_bg_img_phone_view" class="squares">
     <img src="Media/IMG-headline.svg" alt="headline_bg_img_desktop_view" class="big-squares">
@@ -53,31 +80,30 @@
       </ul>
     </div>
   </section>
+
   <section class="recent-work" id="Portfolio">
     <div class="title">
       <h2 class="recent-work-title">My Recent Works</h2>
       <hr>
     </div>
     <div class="grid-container projects">
+
       <div class="project project-1">
         <img src="Media/First-project.png" alt="project-1_sample_img">
-        <div class="project-text">
-          <div class="project-description">
-            <h3 class="project-title">Multi-Post Stories</h3>
-            <p>
-              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-            </p>
-          </div>
+        <div class="project-description" id="first-project">
+          <h3 class="project-title">Multi-Post Stories</h3>
+          <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
           <ul class="project-skills">
             <li>CSS</li>
             <li>HTML</li>
             <li>Bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <a href="" class="see-project"><p>See project</p></a>
-        </div>        
+          <a href="javascript:" class="see-project"><p>See project</p></a> 
+        </div>
       </div>
-      <div class="project project-2 bg-first-img active">
+
+      <div class="project project-2 bg-first-img active" id="second-project">
         <div class="project-description">
           <h3 class="project-title">Profesional Art Printing Data</h3>
           <p>
@@ -89,9 +115,9 @@
             <li>Ruby</li>
           </ul>
         </div>
-        <a href="" class="see-project"><p>See project</p></a>
+        <a class="see-project"><p>See project</p></a>
       </div>
-      <div class="project project-2 bg-second-img">
+      <div class="project project-2 bg-second-img" id="third-project">
         <div class="project-description">
           <h3 class="project-title">Data Dashboard Healthcare</h3>
           <p>
@@ -103,9 +129,9 @@
             <li>Ruby</li>
           </ul>
         </div>
-        <a href="" class="see-project"><p>See project</p></a>
+        <a class="see-project"><p>See project</p></a>
       </div>
-      <div class="project project-2 bg-third-img">
+      <div class="project project-2 bg-third-img" id="fourth-project">
         <div class="project-description">
           <h3 class="project-title">Website Protfolio</h3>
           <p>
@@ -117,9 +143,9 @@
             <li>Ruby</li>
           </ul>
         </div>
-        <a href="" class="see-project"><p>See project</p></a>
+        <a class="see-project"><p>See project</p></a>
       </div>
-      <div class="project project-2 bg-first-img">
+      <div class="project project-2 bg-first-img" id="fifth-project">
         <div class="project-description">
           <h3 class="project-title">Profesional Art Printing Data More</h3>
           <p>
@@ -131,9 +157,9 @@
             <li>Ruby</li>
           </ul>
         </div>
-        <a href="" class="see-project"><p>See project</p></a>
+        <a class="see-project"><p>See project</p></a>
       </div>
-      <div class="project project-2 bg-second-img">
+      <div class="project project-2 bg-second-img" id="sixth-project">
         <div class="project-description">
           <h3 class="project-title">Data Dashboard Healthcare</h3>
           <p>
@@ -145,9 +171,9 @@
             <li>Ruby</li>
           </ul>
         </div>
-        <a href="" class="see-project"><p>See project</p></a>
+        <a class="see-project"><p>See project</p></a>
       </div>
-      <div class="project project-2 bg-third-img">
+      <div class="project project-2 bg-third-img" id="seventh-project">
         <div class="project-description">
           <h3 class="project-title">Website Protfolio</h3>
           <p>
@@ -159,11 +185,12 @@
             <li>Ruby</li>
           </ul>
         </div>
-        <a href="" class="see-project"><p>See project</p></a>
+        <a class="see-project"><p>See project</p></a>
       </div>
       
     </div>
   </section>
+
   <section class="dark-bg" id="About">
     <div class="about-me">
       <img src="Media/about-me-image.svg" alt="about-me_bg_img_phone_view" class="about-me-img">
