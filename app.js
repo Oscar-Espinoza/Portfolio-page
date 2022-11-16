@@ -59,9 +59,6 @@ const projectsInfo = [
   },
 ];
 
-const email = ''
-
-
 document.querySelectorAll('.menu-btn').forEach((item) => {
   item.addEventListener('click', () => {
     const menu = document.getElementById('menu-mobile');
