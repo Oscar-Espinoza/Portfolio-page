@@ -20,6 +20,10 @@ ul {
   margin: 0;
 }
 
+.grid-container {
+  display: grid;
+}
+
 /* ---- pop up window ---- */
 
 .pop-up {
@@ -637,10 +641,6 @@ textarea {
 
   .pop-up-btn {
     flex-grow: initial;
-  }
-
-  .grid-container {
-    display: grid;
   }
 
   #toggle-btn {
