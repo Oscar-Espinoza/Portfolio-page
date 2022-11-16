@@ -81,7 +81,7 @@ ul {
 
 .pop-up-technologies {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
 }
 
 .pop-up-technologies li {
@@ -605,7 +605,12 @@ textarea {
 /* ---- Desktop version ---- */
 
 @media (min-width: 768px) {
-  /* ---- pop-up ---- */
+  /* ---- pop-up desktop---- */
+
+  .pop-up-technologies {
+    justify-content: start;
+    gap: 20px;
+  }
 
   .pop-up .content-description {
     flex-direction: row;
