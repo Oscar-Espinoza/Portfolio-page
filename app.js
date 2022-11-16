@@ -72,7 +72,6 @@ document.querySelectorAll('.menu-btn').forEach((item) => {
 
 document.querySelectorAll('.see-project').forEach((item) => {
   item.addEventListener('click', (e) => {
-
     const popUp = document.getElementById('pop-up');
     const project = projectsInfo.filter((item) => item.id === e.currentTarget.parentNode.id)[0];
     const title = popUp.querySelector('#pop-up-title');
