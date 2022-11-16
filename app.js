@@ -59,6 +59,9 @@ const projectsInfo = [
   },
 ];
 
+const email = ''
+
+
 document.querySelectorAll('.menu-btn').forEach((item) => {
   item.addEventListener('click', () => {
     const menu = document.getElementById('menu-mobile');
@@ -102,3 +105,16 @@ document.querySelectorAll('.see-project').forEach((item) => {
 document.getElementById('close-window').addEventListener('click', () => {
   document.getElementById('pop-up').classList.remove('active');
 });
+
+// document.getElementById('error-close-btn').addEventListener('click', (e) => {
+//   e.currentTarget.parentNode.classList.remove('active')
+// });
+
+// document.getElementById('btn-submit').addEventListener('click', (e) => {
+//   const email = document.getElementById('email-address');
+//   const emailRegex = /^[a-z0-9_.]+@[a-z0-9_.]+\.[a-z0-9_.]+/
+//   if (!emailRegex.test(email.value)) {
+//     e.preventDefault()
+//     document.getElementById('error-msg').classList.add('active')
+//   }
+// });

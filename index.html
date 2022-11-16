@@ -245,7 +245,8 @@
         <textarea rows="5" maxlength="500" name="message" id="message" placeholder="Enter text here" required=""></textarea>
         <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
       </fieldset>
-      <input type="submit" value="Get in touch" class="btn-submit">
+      <input type="submit" value="Get in touch" class="btn-submit" id="btn-submit">
+      <div class="error-msg active" id="error-msg">Invalid email format, please make sure all the letters are in lowecase<p class="error-close-btn" id="error-close-btn">X</p></div>
     </form>
     <div class="social-media-icons">
       <img src="Media/Icon-GitHub-dark.svg" alt="gitgub_icon">

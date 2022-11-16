@@ -585,6 +585,33 @@ textarea {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  display: inline-block;
+}
+
+.error-msg {
+  position: relative;
+  color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.error-msg.active {
+  display: inline-flex;
+}
+
+.error-msg .error-close-btn {
+  position: absolute;
+  font-size: 10px;
+  top: 2px;
+  right: 5px;
+  cursor: pointer;
 }
 
 .see-project:focus,
@@ -853,5 +880,9 @@ textarea {
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
+  }
+
+  .error-msg {
+    align-self: flex-start;
   }
 }
