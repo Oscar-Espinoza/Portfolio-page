@@ -590,7 +590,6 @@ textarea {
 
 .error-msg {
   position: relative;
-  color: white;
   display: none;
   justify-content: center;
   align-items: center;
