@@ -102,3 +102,16 @@ document.querySelectorAll('.see-project').forEach((item) => {
 document.getElementById('close-window').addEventListener('click', () => {
   document.getElementById('pop-up').classList.remove('active');
 });
+
+document.getElementById('error-close-btn').addEventListener('click', (e) => {
+  e.currentTarget.parentNode.classList.remove('active');
+});
+
+document.getElementById('contact_form').addEventListener('submit', (e) => {
+  const emailInput = document.getElementById('email-address');
+  const emailRegEx = /^[a-z0-9_.]+@[a-z0-9_.]+\.[a-z0-9_.]+/;
+  if (!emailRegEx.test(emailInput.value)) {
+    document.getElementById('error-msg').classList.add('active');
+    e.preventDefault();
+  }
+});
