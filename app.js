@@ -106,30 +106,15 @@ document.getElementById('close-window').addEventListener('click', () => {
   document.getElementById('pop-up').classList.remove('active');
 });
 
-// document.getElementById('error-close-btn').addEventListener('click', (e) => {
-//   e.currentTarget.parentNode.classList.remove('active')
-// });
+document.getElementById('error-close-btn').addEventListener('click', (e) => {
+  e.currentTarget.parentNode.classList.remove('active')
+});
 
-// document.getElementById('btn-submit').addEventListener('click', (e) => {
-//   const email = document.getElementById('email-address');
-//   const emailRegex = /^[a-z0-9_.]+@[a-z0-9_.]+\.[a-z0-9_.]+/
-//   if (!emailRegex.test(email.value)) {
-//     e.preventDefault()
-//     document.getElementById('error-msg').classList.add('active')
-//   }
-// });
-
-const form = document.getElementById("contact_form")
-const emailInput = document.getElementById("email-address")
-const emailErrorMsg = document.getElementById("error-msg")
-form.addEventListener('submit', (e) => {
-  let isValid = false
-  const emailRegEx = new RegExp(/^[a-z0-9_.]+@[a-z0-9_.]+\.[a-z0-9_.]+/)
-  isValid = emailRegEx.test(emailInput.value)
-  console.log(emailInput.value)
-  console.log(isValid)
-  if(!isValid) {
-    emailErrorMsg.classList.add('active')
+document.getElementById("contact_form").addEventListener('submit', (e) => {
+  const emailInput = document.getElementById("email-address")
+  const emailRegEx = /^[a-z0-9_.]+@[a-z0-9_.]+\.[a-z0-9_.]+/
+  if(!emailRegEx.test(emailInput.value)) {
+    document.getElementById("error-msg").classList.add('active')
     e.preventDefault()
   } 
 })
