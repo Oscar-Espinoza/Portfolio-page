@@ -72,6 +72,7 @@ document.querySelectorAll('.menu-btn').forEach((item) => {
 
 document.querySelectorAll('.see-project').forEach((item) => {
   item.addEventListener('click', (e) => {
+
     const popUp = document.getElementById('pop-up');
     const project = projectsInfo.filter((item) => item.id === e.currentTarget.parentNode.id)[0];
     const title = popUp.querySelector('#pop-up-title');
@@ -80,10 +81,10 @@ document.querySelectorAll('.see-project').forEach((item) => {
     const img = popUp.querySelector('#pop-up-img');
     const seeLive = popUp.querySelector('#see-live');
     const seeSource = popUp.querySelector('#see-source');
-    
+
     title.textContent = project.name;
     description.textContent = project.description;
-    if(technologiesList.hasChildNodes()){
+    if (technologiesList.hasChildNodes()) {
       Array.from(technologiesList.children).forEach((child) => {
         technologiesList.removeChild(child);
       });
