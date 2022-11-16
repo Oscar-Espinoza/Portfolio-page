@@ -118,3 +118,18 @@ document.getElementById('close-window').addEventListener('click', () => {
 //     document.getElementById('error-msg').classList.add('active')
 //   }
 // });
+
+const form = document.getElementById("contact_form")
+const emailInput = document.getElementById("email-address")
+const emailErrorMsg = document.getElementById("error-msg")
+form.addEventListener('submit', (e) => {
+  let isValid = false
+  const emailRegEx = new RegExp(/^[a-z0-9_.]+@[a-z0-9_.]+\.[a-z0-9_.]+/)
+  isValid = emailRegEx.test(emailInput.value)
+  console.log(emailInput.value)
+  console.log(isValid)
+  if(!isValid) {
+    emailErrorMsg.classList.add('active')
+    e.preventDefault()
+  } 
+})
