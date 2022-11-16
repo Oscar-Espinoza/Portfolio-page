@@ -110,11 +110,11 @@ document.getElementById('error-close-btn').addEventListener('click', (e) => {
   e.currentTarget.parentNode.classList.remove('active');
 });
 
-document.getElementById("contact_form").addEventListener('submit', (e) => {
-  const emailInput = document.getElementById("email-address");
+document.getElementById('contact_form').addEventListener('submit', (e) => {
+  const emailInput = document.getElementById('email-address');
   const emailRegEx = /^[a-z0-9_.]+@[a-z0-9_.]+\.[a-z0-9_.]+/;
-  if(!emailRegEx.test(emailInput.value)) {
-    document.getElementById("error-msg").classList.add('active');
+  if (!emailRegEx.test(emailInput.value)) {
+    document.getElementById('error-msg').classList.add('active');
     e.preventDefault();
-  };
+  }
 });
