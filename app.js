@@ -66,8 +66,8 @@ let formInfo = {
 };
 
 if (localStorage.getItem('formInfo') != null) {
-  formInfo = JSON.parse(localStorage.getItem('formInfo'))
-}
+  formInfo = JSON.parse(localStorage.getItem('formInfo'));
+};
 
 document.querySelectorAll('.menu-btn').forEach((item) => {
   item.addEventListener('click', () => {
@@ -118,10 +118,10 @@ document.getElementById('error-close-btn').addEventListener('click', (e) => {
 });
 
 window.addEventListener('load', () => {
-  // document.querySelectorAll("[required]").forEach(formField => {
-  //   formField.value = formInfo[formField.id]
-  // });
-})
+  document.querySelectorAll("[required]").forEach(formField => {
+    formField.value = formInfo[formField.id];
+  })
+});
 
 document.getElementById('contact_form').addEventListener('submit', (e) => {
   const emailInput = document.getElementById('email-address');
@@ -132,19 +132,9 @@ document.getElementById('contact_form').addEventListener('submit', (e) => {
   }
 });
 
-document.getElementById('contact_form').addEventListener('keyup', (e) => {
-  const targetId = e.target.id
-  formInfo[targetId] = e.target.value
+document.getElementById('contact_form').addEventListener('input', (e) => {
+  const targetId = e.target.id;
+  formInfo[targetId] = e.target.value;
   localStorage.setItem('formInfo', JSON.stringify(formInfo));
-  console.log(JSON.parse(localStorage.getItem('formInfo')))
 });
-
-window.addEventListener('load', () => {
-  const formKeys = Object.keys(formInfo)
-  formInfo = JSON.parse(localStorage.getItem('formInfo'))
-  
-  formKeys.forEach(key => {
-    document.getElementById(key).value = formInfo[key]
-  })
-})
 
