@@ -62,12 +62,12 @@ const projectsInfo = [
 let formInfo = {
   'full-name': '',
   'email-address': '',
-  'message': '',
+  message: '',
 };
 
 if (localStorage.getItem('formInfo') != null) {
   formInfo = JSON.parse(localStorage.getItem('formInfo'));
-};
+}
 
 document.querySelectorAll('.menu-btn').forEach((item) => {
   item.addEventListener('click', () => {
@@ -118,9 +118,9 @@ document.getElementById('error-close-btn').addEventListener('click', (e) => {
 });
 
 window.addEventListener('load', () => {
-  document.querySelectorAll("[required]").forEach(formField => {
+  document.querySelectorAll('[required]'.forEach((formField) => {
     formField.value = formInfo[formField.id];
-  })
+  }));
 });
 
 document.getElementById('contact_form').addEventListener('submit', (e) => {
@@ -137,4 +137,3 @@ document.getElementById('contact_form').addEventListener('input', (e) => {
   formInfo[targetId] = e.target.value;
   localStorage.setItem('formInfo', JSON.stringify(formInfo));
 });
-
