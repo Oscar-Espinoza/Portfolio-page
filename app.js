@@ -139,3 +139,12 @@ document.getElementById('contact_form').addEventListener('keyup', (e) => {
   console.log(JSON.parse(localStorage.getItem('formInfo')))
 });
 
+window.addEventListener('load', () => {
+  const formKeys = Object.keys(formInfo)
+  formInfo = JSON.parse(localStorage.getItem('formInfo'))
+  
+  formKeys.forEach(key => {
+    document.getElementById(key).value = formInfo[key]
+  })
+})
+
