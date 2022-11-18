@@ -133,7 +133,8 @@ document.getElementById('contact_form').addEventListener('submit', (e) => {
 });
 
 document.getElementById('contact_form').addEventListener('input', (e) => {
-  const targetId = e.target.id;
+  const targetId = e.target;
+  console.log(targetId)
   formInfo[targetId] = e.target.value;
   localStorage.setItem('formInfo', JSON.stringify(formInfo));
 });
