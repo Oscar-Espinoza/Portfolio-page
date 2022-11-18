@@ -59,6 +59,16 @@ const projectsInfo = [
   },
 ];
 
+let formInfo = {
+  'full-name': '',
+  'email-address': '',
+  message: '',
+};
+
+if (localStorage.getItem('formInfo') != null) {
+  formInfo = JSON.parse(localStorage.getItem('formInfo'));
+}
+
 document.querySelectorAll('.menu-btn').forEach((item) => {
   item.addEventListener('click', () => {
     const menu = document.getElementById('menu-mobile');
@@ -107,6 +117,12 @@ document.getElementById('error-close-btn').addEventListener('click', (e) => {
   e.currentTarget.parentNode.classList.remove('active');
 });
 
+window.addEventListener('load', () => {
+  document.querySelectorAll('[required]'.forEach((formField) => {
+    formField.value = formInfo[formField.id];
+  }));
+});
+
 document.getElementById('contact_form').addEventListener('submit', (e) => {
   const emailInput = document.getElementById('email-address');
   const emailRegEx = /^[a-z0-9_.]+@[a-z0-9_.]+\.[a-z0-9_.]+/;
@@ -114,4 +130,10 @@ document.getElementById('contact_form').addEventListener('submit', (e) => {
     document.getElementById('error-msg').classList.add('active');
     e.preventDefault();
   }
+});
+
+document.getElementById('contact_form').addEventListener('input', (e) => {
+  const targetId = e.target.id;
+  formInfo[targetId] = e.target.value;
+  localStorage.setItem('formInfo', JSON.stringify(formInfo));
 });
