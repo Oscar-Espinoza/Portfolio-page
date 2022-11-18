@@ -118,9 +118,9 @@ document.getElementById('error-close-btn').addEventListener('click', (e) => {
 });
 
 window.addEventListener('load', () => {
-  document.querySelectorAll('[required]'.forEach((formField) => {
+  document.querySelectorAll('[required]').forEach((formField) => {
     formField.value = formInfo[formField.id];
-  }));
+  });
 });
 
 document.getElementById('contact_form').addEventListener('submit', (e) => {
